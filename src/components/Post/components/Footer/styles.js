@@ -5,6 +5,19 @@ const styles = StyleSheet.create({
     margin: 5,
   },
 
+  iconsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 5,
+  },
+
+  left: {
+    flexDirection: 'row',
+    width: 120,
+    justifyContent: 'space-between',
+  },
+
   likesCount: {
     fontWeight: 'bold',
     margin: 3,
