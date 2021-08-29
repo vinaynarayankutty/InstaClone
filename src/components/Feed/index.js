@@ -6,6 +6,7 @@ import Post from '../Post';
 
 const data = [
   {
+    id: 1,
     user: {
       imageUri:
         'https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
@@ -19,6 +20,7 @@ const data = [
   },
 
   {
+    id: 2,
     user: {
       imageUri:
         'https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
@@ -32,6 +34,7 @@ const data = [
   },
 
   {
+    id: 3,
     user: {
       imageUri:
         'https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
@@ -50,6 +53,7 @@ const Feed = () => {
     <FlatList
       data={data}
       renderItem={({item, index}) => <Post post={item} />}
+      keyExtractor={({id}) => id.toString()}
       ListHeaderComponent={Stories}
     />
   );
